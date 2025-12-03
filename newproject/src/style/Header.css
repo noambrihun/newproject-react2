@@ -1,0 +1,8 @@
+.header {
+  display: flex;
+  justify-content: end;
+}
+
+.title {
+  margin-inline: auto;
+}
