@@ -11,18 +11,18 @@ function Dashboard({ students }) {
           <th>University</th>
           <th>Average Grade</th>
         </tr>
-      </thead>
-      <tbody>
-        {students.map((item, index) => (
-          <tr className="student_row" key={index}>
-            <td>{item.name}</td>
-            <td>{item.age}</td>
-            <td>{item.major}</td>
-            <td>{item.university}</td>
-            <td>{item.averageGrade}</td>
-          </tr>
-        ))}
-      </tbody>
+      </thead><tbody>
+  {students.map((student) => (
+    <tr key={student.id}>
+      <td>{student.name}</td>
+      <td>{student.age}</td>
+      <td>{student.major}</td>
+      <td>{student.university}</td>
+      <td>{student.averageGrade}</td>
+    </tr>
+  ))}
+</tbody>
+
     </table>
   );
 }
